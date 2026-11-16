@@ -12,7 +12,7 @@ public class Cart {
         list.add(p);
     }
 
-    // 计算购物车原始总价
+    // Calculate the original total price of the shopping cart
     public double getTotal() {
         double sum = 0;
         for (Product p : list) {
@@ -22,9 +22,9 @@ public class Cart {
     }
 
     public void showItems() {
-        System.out.println("【购物车】");
+        System.out.println("[Cart]");
         for (Product p : list) {
-            System.out.println(p.getName() + " 单价：" + p.getPrice());
+            System.out.println(p.getName() + " Unit price: " + p.getPrice());
         }
     }
 }
